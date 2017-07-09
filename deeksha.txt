@@ -1,0 +1,168 @@
+
+
+CODEKATA-
+
+
+Question 1:- positive negative or zero
+
+	int a;
+		Scanner s=new Scanner(System.in);
+		a=s.nextInt();
+		System.out.println("Enter no. ");
+		if(a<0)
+		{
+			System.out.println("The number is negative");
+		}
+		else if(a>0)
+		{
+			System.out.println("The number is positive");
+		}
+		else
+		{
+			System.out.println("The number is zero");
+		}
+
+Question 2:- even and odd
+
+	int a;
+		Scanner s=new Scanner(System.in);
+		a=s.nextInt();
+		System.out.println("Enter no. ");
+		if(a%2==0)
+		{
+			System.out.println("The number is even");
+		}
+		else
+		{
+			System.out.println("The number is odd");
+		}  
+
+Question 3:- vowel or consonant
+
+	char vow;
+		Scanner s=new Scanner(System.in);
+		vow=s.next().charAt(0);
+		System.out.println("Enter character "+vow);
+		switch(vow)
+		{
+			case 'a':
+				System.out.println("It is a vowel");
+			break;
+			case 'e':
+				System.out.println("It is a vowel");
+			break;
+			case 'i':
+				System.out.println("It is a vowel");
+			break;
+			case 'o':
+				System.out.println("It is a vowel");
+			break;
+			case 'u':
+				System.out.println("It is a vowel");
+			break;
+			default:
+			    System.out.println("It is a consonant");
+			break;    
+		}
+
+Question 4:- alphabet or not
+
+                char alpha;
+		Scanner s=new Scanner(System.in);
+		alpha=s.next().charAt(0);
+		System.out.println("Enter character "+alpha);
+		if(alpha>='a' && alpha<='z' || alpha>='A' && alpha<='Z')
+		{
+			System.out.println("It is an alphabet");
+		}
+		else
+		{
+		System.out.println("It is not an alphabet");	
+		} 
+
+Question 5:- largest number
+
+	int a,b,c,large;
+		Scanner s=new Scanner(System.in);
+		a=s.nextInt();
+		System.out.println("Enter 1st no. "+a);
+		b=s.nextInt();
+		System.out.println("Enter 2nd no. "+b);
+		c=s.nextInt();
+		System.out.println("Enter 3rd no. "+c);
+		large=a;
+		if(b>a && b>c)
+		{
+			large=b;
+			System.out.println("Largest no. is "+large);	
+		}
+		else if(c>a && c>b)
+		{
+			large=c;
+			System.out.println("Largest no. is "+large);	
+		}
+		else
+		{
+			System.out.println("Largest no. is "+large);	
+		}
+
+Question 6:- leap year or not
+
+	int a;
+		Scanner s=new Scanner(System.in);
+		a=s.nextInt();
+		System.out.println("Enter year "+a);
+		if(a%4==0)
+		{
+		System.out.println("It is a leap year");
+		}
+		else
+		{
+		System.out.println("It is not a leap year");
+		}
+
+Question 7:- To print hello 5 times
+
+                for(int i=1;i<=5;i++)
+		{
+			System.out.println("Hello");
+		}
+
+Question 8:- Sum of natural numbers
+
+                int a=1,b,sum=0;
+		Scanner s=new Scanner(System.in);
+		b=s.nextInt();
+		System.out.println("Sum of natural no.s "+b);
+		while(a<=b)
+		{
+			sum=sum+a;
+			a++;
+		}
+		System.out.println("The sum is "+sum);
+
+Question 9:-Sum of natural numbers using for loop
+
+                int b,sum=0;
+		Scanner s=new Scanner(System.in);
+		b=s.nextInt();
+		System.out.println("Sum of natural no.s "+b);
+	    for(int a=1;a<=b;a++)
+	    {
+	    	sum=sum+a;
+	    }
+	    System.out.println("The sum is "+sum);
+
+Question 10:- To count number of digits
+
+            int b;
+		Scanner s=new Scanner(System.in);
+		b=s.nextInt();
+		System.out.println("Enter no. "+b);
+	    int i=0;
+	    while(b>0)
+	    {
+	    	b=b/10;
+	    	i++;
+	    }
+	    System.out.println("Total no. of digits "+i);
